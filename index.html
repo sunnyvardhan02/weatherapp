@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+   <title>1</title>
+   <style>
+    body {
+        background-image: url('/images.jpg'); /* Replace 'background.jpg' with the path to your image */
+        background-size: cover; /* This will ensure the image covers the entire background */
+        background-position: center; /* Center the background image */
+        background-repeat: no-repeat;
+        background-position: 0%  40%;
+        border-radius: 20% 20%; /* Prevent the background image from repeating */
+    }
+</style>
+
+<audio autoplay loop>
+    <source src="/music.mp3" type="audio/mpeg">
+    Your browser does support the audio element.
+  </audio>
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>Weather  Forecast App</h1>
+        <div id="weather-info">
+            <label for="city">Enter City:</label>
+            <input type="text" id="city" placeholder="City Name">
+            <button onclick="getWeather()">Get Weather</button>
+            <div id="current-weather"></div>
+            <div id="forecast"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
